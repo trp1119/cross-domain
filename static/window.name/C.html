@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js"></script>
+  <title>C页面</title>
+</head>
+<body>
+  <h3>C页面请求同源接口获取数据</h3>
+  <script>
+    axios.get('http://localhost:5000/queryInfo').then((res) => {
+      window.name = JSON.stringify(res)
+    })
+  </script>
+</body>
+</html>

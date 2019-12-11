@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>A页面</title>
+</head>
+<body>
+  <h3>A页面嵌套B页面，与B页面进行通信</h3>
+  <iframe src="http://localhost:5000/postMessage/B.html" frameborder="0" id="iframeBox"></iframe>
+  <script>
+    let dataA = {
+      code: 0,
+      msg: 'A数据!'
+    }
+    iframeBox.onload = () => {
+      iframeBox.contentWindow.postMessage(dataA, 'http://localhost:5000')
+      window.onmessage = function (e) {
+        console.log(e.data)
+      }
+    }
+  </script>
+</body>
+</html>

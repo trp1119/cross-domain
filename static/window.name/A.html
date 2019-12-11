@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>A页面</title>
+</head>
+  <body>
+    <h3>A页面嵌套C页面，获取C页面数据</h3>
+  <iframe src="http://localhost:5000/window.name/C.html" frameborder="0" id="iframeBox"></iframe>
+  <script>
+    let count = 0
+    iframeBox.onload = () => {
+      if (count === 0) {
+        // 由于替换 src 后 iframe 会重新执行 onload，而执行 onload 后又会替换 src，故添加计数器以防止死循环
+        iframeBox.src = "http://localhost:8000/window.name/proxy.html"
+        count++
+        return
+      }
+      console.log(iframeBox.contentWindow.name)
+    }
+  </script>
+  </body>
+</html>

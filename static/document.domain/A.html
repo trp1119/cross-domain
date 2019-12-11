@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>A页面</title>
+</head>
+<body>
+  <h3>A页面嵌套B页面，获取B页面数据</h3>
+  <iframe src="http://b.test.com:5000/document.domain/B.html" frameborder="0" id="iframeBox"></iframe>
+  <script>
+    document.domain = 'test.com'
+    iframeBox.onload = () => {
+      console.log(iframeBox.contentWindow.data)
+    }
+  </script>
+</body>
+</html>

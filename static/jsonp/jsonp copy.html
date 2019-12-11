@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script src="jsonp.js"></script> -->
+<script>
+  // 同源请求
+  // $.ajax({
+  //   url: 'http://localhost:5000/queryInfo',
+  //   method: 'GET',
+  //   dataType: 'json',
+  //   success: (res) => {
+  //     console.log(res)
+  //   }
+  // })
+  // 跨域请求
+  $.ajax({
+    url: 'http://localhost:5000/queryInfo',
+    method: 'GET',
+    dataType: 'jsonp', // 当 data-type 设置为 jsonp 的时候，实现的是 jsonp 跨域请求
+    // jsonp: 'cb', // 自定义传递时的 callback 名称
+    // jsonpCallback: 'fn', // 自定义函数名
+    success: (res) => {
+      console.log(res) // 从服务器获取的结果
+    }
+  })
+  // http://localhost:5000/queryInfo?callback=jQuery34104180539517161581_1575723044038&_=1575723044039
+  // JQuery 帮我们生成一个全局的随机函数，并且把函数传递给服务器（也是利用 script 的 src 完成的）
+
+  function fn (res) {
+    console.log(res) // res 为从服务器获取的数据
+  }
+</script>
+<!-- 一般 JSONP 使用方法 -->
+<script src="http://localhost:5000/queryInfo?callback=fn"></script>
+</head>
+<body>
+  前端界面
+  <script>
+    jsonp('http://localhost:5000/queryInfo').then(res => {
+      console.log(res)
+    })
+  </script>
+</body>
+</html>

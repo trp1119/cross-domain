@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>cors</title>
+  <script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js"></script>
+</head>
+<body>
+    <h3>CORS 使用方法</h3>
+    <script>
+      // 客户端为普通的 axios get 请求 
+      axios({
+        url: 'http://localhost:5000/queryInfo',
+        method: 'get',
+        withCredentials: true, // 服务端和客户端 withCredentials 属性都要设置为 true，无则客户端与服务端无法基于请求头进行 cookie 传递
+      }).then(res => {
+        console.log(res)
+      })
+    </script>
+</body>
+</html>
