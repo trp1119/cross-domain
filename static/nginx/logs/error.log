@@ -1,0 +1,36 @@
+2019/12/11 10:01:43 [emerg] 5152#15804: CreateFile() "C:\Users\TANG\Desktop\个人总结\跨域问题的出现及其解决方案\demo2\static\nginx/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2019/12/11 10:03:41 [error] 8508#21332: *1 CreateFile() "C:\Users\TANG\Desktop\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2019/12/11 10:05:08 [notice] 11388#6448: signal process started
+2019/12/11 10:07:00 [error] 13952#15604: *4 CreateFile() "C:\Users\TANG\Desktop\nginx/html/test/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:7000", referrer: "http://localhost:7000/"
+2019/12/11 10:09:00 [emerg] 15076#1304: host not found in upstream "location" in C:\Users\TANG\Desktop\nginx/conf/nginx.conf:65
+2019/12/11 10:09:54 [emerg] 21712#15296: host not found in upstream "location" in C:\Users\TANG\Desktop\nginx/conf/nginx.conf:65
+2019/12/11 10:10:14 [emerg] 13120#23648: host not found in upstream "location" in C:\Users\TANG\Desktop\nginx/conf/nginx.conf:65
+2019/12/11 10:11:16 [emerg] 24892#22288: host not found in upstream "location" in C:\Users\TANG\Desktop\nginx/conf/nginx.conf:65
+2019/12/11 10:11:47 [notice] 23988#19496: signal process started
+2019/12/11 10:11:50 [notice] 18764#9236: signal process started
+2019/12/11 10:17:35 [notice] 22656#22580: signal process started
+2019/12/11 10:17:54 [notice] 17560#3792: signal process started
+2019/12/11 10:17:54 [error] 17560#3792: CreateFile() "C:\Users\TANG\Desktop\nginx/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2019/12/11 10:18:03 [notice] 25280#3740: signal process started
+2019/12/11 10:18:03 [error] 25280#3740: CreateFile() "C:\Users\TANG\Desktop\nginx/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2019/12/11 10:23:43 [error] 8684#7504: *1 CreateFile() "C:\Users\TANG\Desktop\nginx/html/test/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:7000"
+2019/12/11 10:23:43 [error] 8684#7504: *1 CreateFile() "C:\Users\TANG\Desktop\nginx/html/test/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:7000"
+2019/12/11 10:23:45 [error] 8684#7504: *1 CreateFile() "C:\Users\TANG\Desktop\nginx/html/test/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:7000", referrer: "http://localhost:7000/"
+2019/12/11 10:25:04 [notice] 5260#5780: signal process started
+2019/12/11 10:25:22 [notice] 7224#4076: signal process started
+2019/12/11 10:30:42 [notice] 11100#2116: signal process started
+2019/12/11 10:33:25 [notice] 2336#7076: signal process started
+2019/12/11 10:33:52 [error] 3164#8036: *1 CreateFile() "C:\Users\TANG\Desktop\nginx/html/test/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:7000"
+2019/12/11 10:36:22 [notice] 5748#11228: signal process started
+2019/12/11 10:36:25 [error] 1320#10608: *6 CreateFile() "C:\Users\TANG\Desktop\nginx/html/test/queryInfo" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /queryInfo HTTP/1.1", host: "localhost:7000", referrer: "http://localhost:7000/"
+2019/12/11 10:36:34 [error] 1320#10608: *6 CreateFile() "C:\Users\TANG\Desktop\nginx/html/test/queryInfo" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /queryInfo HTTP/1.1", host: "localhost:7000", referrer: "http://localhost:7000/"
+2019/12/11 10:36:44 [notice] 6124#6936: signal process started
+2019/12/11 10:53:21 [notice] 2620#9628: signal process started
+2019/12/11 22:03:34 [error] 936#13632: *1 CreateFile() "C:\Users\TANG\Desktop\nginx/html/test/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:7000", referrer: "http://localhost:7000/"
+2019/12/11 22:05:04 [notice] 10280#8932: signal process started
+2019/12/12 18:00:16 [error] 3016#13176: *2 CreateFile() "C:\Users\TANG\Desktop\git\cross-domain\static\nginx/html/test/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:7000", referrer: "http://localhost:7000/"
+2019/12/12 18:00:17 [error] 3016#13176: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /queryInfo HTTP/1.1", upstream: "http://[::1]:5000/queryInfo", host: "localhost:7000", referrer: "http://localhost:7000/"
+2019/12/12 18:00:18 [error] 3016#13176: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /queryInfo HTTP/1.1", upstream: "http://127.0.0.1:5000/queryInfo", host: "localhost:7000", referrer: "http://localhost:7000/"
+2019/12/12 18:00:30 [error] 3016#13176: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /queryInfo HTTP/1.1", upstream: "http://127.0.0.1:5000/queryInfo", host: "localhost:7000", referrer: "http://localhost:7000/"
+2019/12/12 18:00:31 [error] 3016#13176: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /queryInfo HTTP/1.1", upstream: "http://[::1]:5000/queryInfo", host: "localhost:7000", referrer: "http://localhost:7000/"
+2019/12/12 23:03:10 [error] 3016#13176: *8 CreateFile() "C:\Users\TANG\Desktop\git\cross-domain\static\nginx/html/test/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:7000", referrer: "http://localhost:7000/"

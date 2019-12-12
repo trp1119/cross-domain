@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
 /dist
+/static/vue-project/node_modules
+/static/react-app/node_modules
 
 # local env files
 .env.local

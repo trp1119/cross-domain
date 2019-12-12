@@ -1,18 +1,18 @@
 /**
- * 后台服务器
+ * 客户端服务器（静态资源服务器）
  */
 
 let express = require('express'),
     app = express()
 
 app.listen(8000, () => {
-  console.log('后台服务器启动成功，运行在8000端口')
+  console.log('客户端服务器（静态资源服务器）启动成功，运行在8000端口')
 })
 
 app.get('/queryInfo', (req, res) => {
   res.send({
     code: 0,
-    msg: 'my name is zhufeng!'
+    msg: '同源数据！'
   })
 })
 

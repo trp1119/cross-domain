@@ -1,5 +1,5 @@
 /**
- * 静态资源服务器
+ * 客户端 静态资源服务器
  */
 
 let express = require('express'),
